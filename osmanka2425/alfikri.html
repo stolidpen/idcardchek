@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1stylecard.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front"><img class="image" src="../image/card/Alfikri.PNG"></div>
+        <div class="card__face card__face--back"><img class="image" src="../image/card/Alfikriq.PNG"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script>var cards = document.querySelectorAll('.card');
+
+    [...cards].forEach((card) => {
+      card.addEventListener('click', function () {
+        card.classList.toggle('is-flipped');
+      });
+    });</script>
+</body>
+
+</html>
